@@ -8,8 +8,6 @@ Created because I wanted these myself and then i can just as well share it with 
 
 ### VS Code
 
-[Add to Little Snitch](x-littlesnitch:subscribe-rules?url=https://raw.githubusercontent.com/voxpelli/lsrules/main/rules/vscode.lsrules)
-
 #### URL:
 
 [`https://raw.githubusercontent.com/voxpelli/lsrules/main/rules/vscode.lsrules`](./rules/vscode.lsrules)
