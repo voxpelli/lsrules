@@ -1,0 +1,13 @@
+# Basic ones
+/coverage
+/coverage-ts
+/node_modules
+/.env
+/.nyc_output
+
+# Generated types
+*.d.ts
+*.d.ts.map
+!/lib/**/*-types.d.ts
+
+# Library specific ones
