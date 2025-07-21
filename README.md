@@ -1,32 +1,23 @@
-# Node App Template
+# Little Snitch Rules
 
-A GitHub template repo for node apps
+Generates rule groups that can be [subscribed to](https://help.obdev.at/littlesnitch5/lsc-rule-group-subscriptions) within [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) (the non-mini version)
 
-[![neostandard javascript style](https://img.shields.io/badge/code_style-neostandard-7fffff?style=flat&labelColor=ff80ff)](https://github.com/neostandard/neostandard)
-[![Types in JS](https://img.shields.io/badge/types_in_js-yes-brightgreen)](https://github.com/voxpelli/types-in-js)
-[![Follow @voxpelli@mastodon.social](https://img.shields.io/mastodon/follow/109247025527949675?domain=https%3A%2F%2Fmastodon.social&style=social)](https://mastodon.social/@voxpelli)
+Created because I wanted these myself and then i can just as well share it with others.
 
-## Install
+## Available rule groups
 
-Clone the repo and install dependencies:
+### VS Code
 
-```sh
-npm ci
-```
+[Add to Little Snitch](x-littlesnitch:subscribe-rules?url=https://raw.githubusercontent.com/voxpelli/lsrules/main/rules/vscode.lsrules)
 
-## Usage
+#### URL:
 
-Start the app:
+[`https://raw.githubusercontent.com/voxpelli/lsrules/main/rules/vscode.lsrules`](./rules/vscode.lsrules)
 
-```sh
-npm start
-```
+#### Source:
 
-## Similar modules
+Generated from the [markdown source](https://github.com/microsoft/vscode-docs/blob/main/docs/setup/network.md) of the ["Network Connections in Visual Studio Code"](https://code.visualstudio.com/docs/setup/network#_common-hostnames) documentation page
 
-* [`example`](https://example.com/) – is similar in this way
+## Similar projects
 
-## See also
-
-* [Announcement blog post](#)
-* [Announcement tweet](#)
+* [`jasuca/little-snitch-rules`](https://github.com/jasuca/little-snitch-rules) / [`ruimarinho/little-snitch-rules`](https://github.com/ruimarinho/little-snitch-rules) / [`voxpelli/little-snitch-rules`](https://github.com/voxpelli/little-snitch-rules) – manually maintained rule sets
