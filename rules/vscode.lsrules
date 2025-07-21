@@ -1,0 +1,158 @@
+{
+  "name": "VS Code",
+  "description": "Auto-generated rules from the VS Code documentation",
+  "rules": [
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code download and update server",
+      "remote-hosts": "update.code.visualstudio.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code documentation",
+      "remote-hosts": "code.visualstudio.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Microsoft link forwarding service",
+      "remote-hosts": "go.microsoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Marketplace",
+      "remote-hosts": "marketplace.visualstudio.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Marketplace",
+      "remote-domains": "gallery.vsassets.io"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Marketplace",
+      "remote-domains": "gallerycdn.vsassets.io"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Crash reporting service",
+      "remote-hosts": "rink.hockeyapp.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "In-product settings search",
+      "remote-hosts": "bingsettingssearch.trafficmanager.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "In-product settings search",
+      "remote-hosts": "vscode.search.windows.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "GitHub repository raw file access",
+      "remote-hosts": "raw.githubusercontent.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Marketplace badge service",
+      "remote-hosts": "vsmarketplacebadges.dev"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code CDN",
+      "remote-domains": "vscode-cdn.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code download CDN",
+      "remote-hosts": "vscode.download.prss.microsoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio download server, provides dependencies for some VS Code extensions (C++, C#)",
+      "remote-hosts": "download.visualstudio.microsoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code Settings Sync service",
+      "remote-hosts": "vscode-sync.trafficmanager.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code Settings Sync service (Insiders)",
+      "remote-hosts": "vscode-sync-insiders.trafficmanager.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Used when logging in with GitHub or Microsoft for an extension or Settings Sync",
+      "remote-hosts": "vscode.dev"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Used when loading web extensions",
+      "remote-domains": "vscode-unpkg.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "protocol": "tcp",
+      "notes": "Visual Studio Code Experiment Service, used to provide experimental user experiences",
+      "remote-hosts": "default.exp-tas.com"
+    }
+  ]
+}

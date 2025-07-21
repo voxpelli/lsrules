@@ -1,51 +1,50 @@
 /* eslint-disable unicorn/no-process-exit */
 /* eslint-disable no-console */
 
-import { mkdir, writeFile } from 'node:fs/promises';
-import path from 'node:path';
-import { parseArgs } from 'node:util';
+import { writeFile } from 'node:fs/promises';
+import { extractHostnamesWithNotes } from './lib/hostnames.js';
+import { generateLSRulesFromHostnames } from './lib/lsrules.js';
 
-import { main } from './lib/main.js';
+const FILE_EXTENSION = '.lsrules';
+const OUTPUT_PATH = './rules';
 
-const {
-  positionals: [
-    outDir,
-    ...positionals
-  ],
-} = parseArgs({
-  allowPositionals: true,
-});
+const rulesToGenerate = /** @type {const} */ ([
+  {
+    filename: 'vscode',
+    description: 'Auto-generated rules from the VS Code documentation',
+    name: 'VS Code',
+    process: 'identifier.UBF8T346G9/com.microsoft.VSCode',
+    source: 'https://raw.githubusercontent.com/microsoft/vscode-docs/main/docs/setup/network.md',
+    startAtHeader: '## Common hostnames',
+  },
+]);
 
-if (!outDir) {
-  console.error('Error: An output directory is required');
-  process.exit(1);
-}
+const settled = await Promise.allSettled(rulesToGenerate.map(async (definition) => {
+  const {
+    filename,
+    source,
+    startAtHeader,
+    ...lsrulesOptions
+  } = definition;
 
-if (positionals.length === 0) {
-  console.error('Error: At least one additional argument is required');
-  process.exit(1);
-}
+  const req = await fetch(source);
 
-try {
-  // eslint-disable-next-line security/detect-non-literal-fs-filename
-  await mkdir(outDir);
-} catch {
-  // It's okay if it already exists
-}
+  if (!req.ok) {
+    throw new Error(`Failed to fetch source, got: ${req.status} ${req.statusText}`);
+  }
 
-const FILE_EXTENSION = '.txt';
+  const hostnamesWithNotes = extractHostnamesWithNotes(await req.text(), startAtHeader);
 
-const settled = await Promise.allSettled(positionals.map(async (name) => {
-  const data = await main(name);
+  const result = generateLSRulesFromHostnames(hostnamesWithNotes, lsrulesOptions);
 
   // eslint-disable-next-line security/detect-non-literal-fs-filename
   await writeFile(
-    path.join(outDir, name + FILE_EXTENSION),
-    data,
+    new URL(`${OUTPUT_PATH}/${filename}${FILE_EXTENSION}`, import.meta.url),
+    JSON.stringify(result, undefined, 2),
     'utf8'
   );
 
-  return name;
+  return filename;
 }));
 
 let failed = false;
