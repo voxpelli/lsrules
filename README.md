@@ -10,7 +10,7 @@ Created because I wanted these myself and then i can just as well share it with 
 
 #### URL:
 
-[`https://raw.githubusercontent.com/voxpelli/lsrules/refs/heads/main/rules/vscode.lsrules`](./rules/vscode.lsrules)
+[`https://raw.githubusercontent.com/voxpelli/lsrules/refs/heads/main/rules/vscode.lsrules`](https://raw.githubusercontent.com/voxpelli/lsrules/refs/heads/main/rules/vscode.lsrules)
 
 #### Source:
 
