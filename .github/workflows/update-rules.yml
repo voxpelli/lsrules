@@ -1,0 +1,34 @@
+name: Update rules
+
+on:
+  schedule:
+    # At 22:35 on Friday: https://crontab.guru/#35_22_*_*_5
+    - cron: '35 22 * * 5'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    name: Update rules
+    if: github.event_name != 'schedule' || github.repository == 'voxpelli/lsrules'
+    uses: voxpelli/ghatemplates/.github/workflows/sync-reusable.yml@main
+    secrets: inherit
+    with:
+      app-id: '1082006'
+      lockfile: true
+      npm-sync-script: 'start'
+      branch-name: 'automated/refresh'
+      commit-message: 'Update rules from sources'
+      pr-title: Update rules from sources'
+      pr-body: |
+        The rules are outdated and needs to be updated.
+
+        This PR contains updated rules generated from the sources. Verify that everything looks alright, then merge.
+
+        _This is an auto-generated PR. It's handled by [a workflow](/${{ github.repository }}/actions/runs/${{ github.run_id }}) which keeps it up to date at a schedule._
