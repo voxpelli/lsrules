@@ -14,7 +14,7 @@ Created because I wanted these myself and then i can just as well share it with 
 
 #### Source:
 
-Generated from the [markdown source](https://github.com/microsoft/vscode-docs/blob/main/docs/setup/network.md) of the ["Network Connections in Visual Studio Code"](https://code.visualstudio.com/docs/setup/network#_common-hostnames) documentation page
+Generated from the [markdown source](https://github.com/microsoft/vscode-docs/blob/main/docs/setup/network.md) of the ["Network Connections in Visual Studio Code"](https://code.visualstudio.com/docs/setup/network#_common-hostnames) documentation page and includes the notes from that page for each rule it adds. Adds both domain name rules (the `*.` prefixed ones) and host name rules (all the others) and sets them all to `allow` for HTTPS traffic from the VSCode app.
 
 ## Similar projects
 
