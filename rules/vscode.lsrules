@@ -135,7 +135,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Used when logging in with GitHub or Microsoft for an extension or Settings Sync",
+      "notes": "Used as a fallback when logging in with GitHub or Microsoft for an extension or Settings Sync (just `vscode.dev/redirect`)",
       "remote-hosts": "vscode.dev"
     },
     {
