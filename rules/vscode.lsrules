@@ -63,22 +63,6 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "In-product settings search",
-      "remote-hosts": "bingsettingssearch.trafficmanager.net"
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
-      "protocol": "tcp",
-      "notes": "In-product settings search",
-      "remote-hosts": "vscode.search.windows.net"
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
-      "protocol": "tcp",
       "notes": "GitHub repository raw file access",
       "remote-hosts": "raw.githubusercontent.com"
     },
