@@ -31,12 +31,12 @@
   },
   "devDependencies": {
     "@types/node": "^20.19.9",
-    "@voxpelli/eslint-config": "^23.0.0",
+    "@voxpelli/eslint-config": "^25.0.0",
     "@voxpelli/tsconfig": "^16.0.0",
-    "eslint": "^9.31.0",
+    "eslint": "^10.0.0",
     "husky": "^9.1.7",
-    "installed-check": "^9.3.0",
-    "knip": "^5.62.0",
+    "installed-check": "^10.0.0",
+    "knip": "^6.0.0",
     "npm-run-all2": "^8.0.4",
     "type-coverage": "^2.29.7",
     "typescript": "~5.9.0"
