@@ -7,7 +7,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code download and update server",
+      "notes": "{% data variables.product.prodname_vscode %} download and update server",
       "remote-hosts": "update.code.visualstudio.com"
     },
     {
@@ -15,7 +15,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code documentation",
+      "notes": "{% data variables.product.prodname_vscode %} documentation",
       "remote-hosts": "code.visualstudio.com"
     },
     {
@@ -79,7 +79,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code CDN",
+      "notes": "{% data variables.product.prodname_vscode %} CDN",
       "remote-domains": "vscode-cdn.net"
     },
     {
@@ -87,7 +87,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code download CDN",
+      "notes": "{% data variables.product.prodname_vscode %} download CDN",
       "remote-hosts": "vscode.download.prss.microsoft.com"
     },
     {
@@ -95,7 +95,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio download server, provides dependencies for some VS Code extensions (C++, C#)",
+      "notes": "Visual Studio download server, provides dependencies for some {% data variables.product.prodname_vscode_shortname %} extensions (C++, C#)",
       "remote-hosts": "download.visualstudio.microsoft.com"
     },
     {
@@ -103,7 +103,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code Settings Sync service",
+      "notes": "{% data variables.product.prodname_vscode %} Settings Sync service",
       "remote-hosts": "vscode-sync.trafficmanager.net"
     },
     {
@@ -111,7 +111,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code Settings Sync service (Insiders)",
+      "notes": "{% data variables.product.prodname_vscode %} Settings Sync service (Insiders)",
       "remote-hosts": "vscode-sync-insiders.trafficmanager.net"
     },
     {
@@ -135,7 +135,7 @@
       "ports": "443",
       "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "protocol": "tcp",
-      "notes": "Visual Studio Code Experiment Service, used to provide experimental user experiences",
+      "notes": "{% data variables.product.prodname_vscode %} Experiment Service, used to provide experimental user experiences",
       "remote-hosts": "default.exp-tas.com"
     }
   ]
